@@ -12,7 +12,7 @@ logger.quiet("Gradle version: ${gradle.gradleVersion}")
 plugins {
   id("java-library")
   id("com.diffplug.gradle.spotless") version "6.25.0" apply (false)
-  id("com.github.spotbugs") version "6.0.15" apply (false)
+  id("com.github.spotbugs") version "6.0.18" apply (false)
   id("com.asarkar.gradle.build-time-tracker") version "4.3.0"
 }
 
@@ -105,11 +105,11 @@ subprojects {
     implementation("org.apache.logging.log4j:log4j-core:2.23.1")
     implementation("org.apache.logging.log4j:log4j-api:2.23.1")
     implementation("org.apache.logging.log4j:log4j-slf4j2-impl:2.23.1")
-    implementation("com.github.spotbugs:spotbugs-annotations:4.8.5")
-    implementation("com.google.guava:guava:33.2.0-jre")
+    implementation("com.github.spotbugs:spotbugs-annotations:4.8.6")
+    implementation("com.google.guava:guava:33.2.1-jre")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
-    testImplementation("com.google.truth:truth:1.4.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.3")
+    testImplementation("com.google.truth:truth:1.4.3")
     testImplementation("org.mockito:mockito-core:5.12.0")
     testImplementation("org.mockito:mockito-junit-jupiter:5.12.0")
 
